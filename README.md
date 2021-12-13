@@ -13,6 +13,6 @@ If an error occurs write `$ chmod +x ./Solitaire.x86_64` and open it again
 
 ### Windows
 
-Download the `Solitaire.exe` file from https://github.com/Rowiz49/Godot_Solitaire/releases/download/V1.0.0/Solitaire.exe
+Download the `Solitaire.exe` file from https://github.com/Rowiz49/Godot_Solitaire/releases/download/V1.0.0/Windows_Solitaire.exe
 
 Run it
