@@ -1,0 +1,248 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://PNG/GUI/Solitaire.png" type="Texture" id=1]
+[ext_resource path="res://Board.gd" type="Script" id=2]
+[ext_resource path="res://Card_master.gd" type="Script" id=3]
+[ext_resource path="res://PNG/Cards (small)/card_spades_suit.png" type="Texture" id=4]
+[ext_resource path="res://PNG/Cards (small)/card_clubs_suit.png" type="Texture" id=5]
+[ext_resource path="res://PNG/Cards (small)/card_diamonds_suit.png" type="Texture" id=6]
+[ext_resource path="res://PNG/Cards (small)/card_hearts_suit.png" type="Texture" id=7]
+[ext_resource path="res://ClickZone.tscn" type="PackedScene" id=8]
+[ext_resource path="res://ClickZoneSmall.tscn" type="PackedScene" id=9]
+[ext_resource path="res://ClickZone.gd" type="Script" id=10]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=11]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 1, 1, 0 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 1, 1, 1 )
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 20
+shadow_size = 1
+
+[node name="Board" type="Node2D"]
+pause_mode = 1
+script = ExtResource( 2 )
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" parent="." instance=ExtResource( 11 )]
+pause_mode = 2
+
+[node name="DiscardPosition" type="Position2D" parent="."]
+position = Vector2( 256, 128 )
+
+[node name="Row_Position_1" type="Position2D" parent="." groups=["Row"]]
+position = Vector2( 448, 256 )
+
+[node name="ClickZone" parent="Row_Position_1" instance=ExtResource( 8 )]
+
+[node name="Row_Position_2" type="Position2D" parent="." groups=["Row"]]
+position = Vector2( 576, 256 )
+
+[node name="ClickZone" parent="Row_Position_2" instance=ExtResource( 8 )]
+
+[node name="Row_Position_3" type="Position2D" parent="." groups=["Row"]]
+position = Vector2( 704, 256 )
+
+[node name="ClickZone" parent="Row_Position_3" instance=ExtResource( 8 )]
+
+[node name="Row_Position_4" type="Position2D" parent="." groups=["Row"]]
+position = Vector2( 832, 256 )
+
+[node name="ClickZone" parent="Row_Position_4" instance=ExtResource( 8 )]
+
+[node name="Row_Position_5" type="Position2D" parent="." groups=["Row"]]
+position = Vector2( 960, 256 )
+
+[node name="ClickZone" parent="Row_Position_5" instance=ExtResource( 8 )]
+
+[node name="Row_Position_6" type="Position2D" parent="." groups=["Row"]]
+position = Vector2( 1088, 256 )
+
+[node name="ClickZone" parent="Row_Position_6" instance=ExtResource( 8 )]
+
+[node name="Row_Position_7" type="Position2D" parent="." groups=["Row"]]
+position = Vector2( 1216, 256 )
+
+[node name="ClickZone" parent="Row_Position_7" instance=ExtResource( 8 )]
+
+[node name="Card_master" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Hearts_end" type="Position2D" parent="." groups=["Target"]]
+visible = false
+position = Vector2( 664, 136 )
+
+[node name="TextureRect2" type="Panel" parent="Hearts_end"]
+margin_left = -40.0
+margin_top = -59.0
+margin_right = 40.0
+margin_bottom = 57.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Hearts_end/TextureRect2"]
+margin_left = 16.0
+margin_top = 35.0
+margin_right = 64.0
+margin_bottom = 83.0
+mouse_filter = 2
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ClickZone" parent="Hearts_end" instance=ExtResource( 9 )]
+
+[node name="Diamond_end" type="Position2D" parent="." groups=["Target"]]
+visible = false
+position = Vector2( 792, 136 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect2" type="Panel" parent="Diamond_end"]
+margin_left = -39.0
+margin_top = -59.0
+margin_right = 41.0
+margin_bottom = 57.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Diamond_end/TextureRect2"]
+margin_left = 15.0
+margin_top = 35.0
+margin_right = 63.0
+margin_bottom = 83.0
+mouse_filter = 2
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ClickZone" parent="Diamond_end" instance=ExtResource( 9 )]
+
+[node name="Clubs_end" type="Position2D" parent="." groups=["Target"]]
+visible = false
+position = Vector2( 920, 136 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect2" type="Panel" parent="Clubs_end"]
+margin_left = -39.0
+margin_top = -59.0
+margin_right = 41.0
+margin_bottom = 57.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Clubs_end/TextureRect2"]
+margin_left = 15.0
+margin_top = 35.0
+margin_right = 63.0
+margin_bottom = 83.0
+mouse_filter = 2
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ClickZone" parent="Clubs_end" instance=ExtResource( 9 )]
+
+[node name="Spades_end" type="Position2D" parent="." groups=["Target"]]
+visible = false
+position = Vector2( 1048, 136 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect2" type="Panel" parent="Spades_end"]
+margin_left = -39.0
+margin_top = -59.0
+margin_right = 41.0
+margin_bottom = 57.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Spades_end/TextureRect2"]
+margin_left = 15.0
+margin_top = 35.0
+margin_right = 63.0
+margin_bottom = 83.0
+mouse_filter = 2
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ClickZone" parent="Spades_end" instance=ExtResource( 9 )]
+
+[node name="DeckPosition" type="Position2D" parent="."]
+visible = false
+position = Vector2( 128, 128 )
+z_index = 2000
+
+[node name="Deck_clicker" type="Button" parent="DeckPosition"]
+margin_left = -40.0
+margin_top = -61.0
+margin_right = 40.0
+margin_bottom = 55.0
+button_mask = 3
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Outside" type="Node2D" parent="."]
+position = Vector2( -8, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="OutsideArea" type="Area2D" parent="Outside"]
+script = ExtResource( 10 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Outside/OutsideArea"]
+position = Vector2( 8, 0 )
+polygon = PoolVector2Array( 0, 0, 1280, 0, 1280, 192, 1112, 192, 1112, 72, 600, 72, 600, 192, 384, 192, 384, 720, 0, 720 )
+
+[connection signal="dragged_card" from="." to="Card_master" method="_on_Board_dragged_card"]
+[connection signal="won" from="." to="UI" method="_on_Board_won"]
+[connection signal="start_game" from="UI" to="." method="start"]
+[connection signal="dragging_cards" from="Card_master" to="." method="_on_Card_master_dragging_cards"]
+[connection signal="button_down" from="DeckPosition/Deck_clicker" to="." method="_on_Deck_clicker_button_down"]
+[connection signal="input_event" from="Outside/OutsideArea" to="Outside/OutsideArea" method="_on_ClickZone_input_event"]

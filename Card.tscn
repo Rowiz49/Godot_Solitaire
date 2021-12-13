@@ -1,0 +1,84 @@
+[gd_scene load_steps=57 format=2]
+
+[ext_resource path="res://Card.gd" type="Script" id=1]
+[ext_resource path="res://PNG/Cards (large)/card_back.png" type="Texture" id=2]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_K.png" type="Texture" id=3]
+[ext_resource path="res://PNG/Cards (large)/card_spades_07.png" type="Texture" id=4]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_03.png" type="Texture" id=5]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_07.png" type="Texture" id=6]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_A.png" type="Texture" id=7]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_02.png" type="Texture" id=8]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_08.png" type="Texture" id=9]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_09.png" type="Texture" id=10]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_03.png" type="Texture" id=11]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_J.png" type="Texture" id=12]
+[ext_resource path="res://PNG/Cards (large)/card_spades_06.png" type="Texture" id=13]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_10.png" type="Texture" id=14]
+[ext_resource path="res://PNG/Cards (large)/card_spades_08.png" type="Texture" id=15]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_07.png" type="Texture" id=16]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_A.png" type="Texture" id=17]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_02.png" type="Texture" id=18]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_05.png" type="Texture" id=19]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_09.png" type="Texture" id=20]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_A.png" type="Texture" id=21]
+[ext_resource path="res://PNG/Cards (large)/card_spades_02.png" type="Texture" id=22]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_J.png" type="Texture" id=23]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_05.png" type="Texture" id=24]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_08.png" type="Texture" id=25]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_02.png" type="Texture" id=26]
+[ext_resource path="res://PNG/Cards (large)/card_spades_04.png" type="Texture" id=27]
+[ext_resource path="res://PNG/Cards (large)/card_spades_05.png" type="Texture" id=28]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_06.png" type="Texture" id=29]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_08.png" type="Texture" id=30]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_03.png" type="Texture" id=31]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_J.png" type="Texture" id=32]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_Q.png" type="Texture" id=33]
+[ext_resource path="res://PNG/Cards (large)/card_spades_09.png" type="Texture" id=34]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_04.png" type="Texture" id=35]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_04.png" type="Texture" id=36]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_10.png" type="Texture" id=37]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_Q.png" type="Texture" id=38]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_05.png" type="Texture" id=39]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_07.png" type="Texture" id=40]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_04.png" type="Texture" id=41]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_10.png" type="Texture" id=42]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_K.png" type="Texture" id=43]
+[ext_resource path="res://PNG/Cards (large)/card_diamonds_K.png" type="Texture" id=44]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_Q.png" type="Texture" id=45]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_06.png" type="Texture" id=46]
+[ext_resource path="res://PNG/Cards (large)/card_hearts_06.png" type="Texture" id=47]
+[ext_resource path="res://PNG/Cards (large)/card_clubs_09.png" type="Texture" id=48]
+[ext_resource path="res://PNG/Cards (large)/card_spades_03.png" type="Texture" id=49]
+[ext_resource path="res://PNG/Cards (large)/card_spades_A.png" type="Texture" id=50]
+[ext_resource path="res://PNG/Cards (large)/card_spades_J.png" type="Texture" id=51]
+[ext_resource path="res://PNG/Cards (large)/card_spades_10.png" type="Texture" id=52]
+[ext_resource path="res://PNG/Cards (large)/card_spades_K.png" type="Texture" id=53]
+[ext_resource path="res://PNG/Cards (large)/card_spades_Q.png" type="Texture" id=54]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 7 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 36 ), ExtResource( 19 ), ExtResource( 46 ), ExtResource( 6 ), ExtResource( 30 ), ExtResource( 48 ), ExtResource( 14 ), ExtResource( 23 ), ExtResource( 45 ), ExtResource( 3 ), ExtResource( 21 ), ExtResource( 8 ), ExtResource( 31 ), ExtResource( 41 ), ExtResource( 24 ), ExtResource( 29 ), ExtResource( 40 ), ExtResource( 9 ), ExtResource( 20 ), ExtResource( 37 ), ExtResource( 32 ), ExtResource( 38 ), ExtResource( 44 ), ExtResource( 17 ), ExtResource( 26 ), ExtResource( 5 ), ExtResource( 35 ), ExtResource( 39 ), ExtResource( 47 ), ExtResource( 16 ), ExtResource( 25 ), ExtResource( 10 ), ExtResource( 42 ), ExtResource( 12 ), ExtResource( 33 ), ExtResource( 43 ), ExtResource( 50 ), ExtResource( 22 ), ExtResource( 49 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 13 ), ExtResource( 4 ), ExtResource( 15 ), ExtResource( 34 ), ExtResource( 52 ), ExtResource( 51 ), ExtResource( 54 ), ExtResource( 53 ) ],
+"loop": true,
+"name": "CardSet",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 40.1017, 58.4311 )
+
+[node name="Card" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "CardSet"
+
+[node name="Card_Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card_Hitbox"]
+shape = SubResource( 2 )
+
+[connection signal="input_event" from="Card_Hitbox" to="." method="_on_Card_Hitbox_input_event"]
