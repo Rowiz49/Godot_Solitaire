@@ -126,10 +126,10 @@ __meta__ = {
 }
 
 [node name="Signature" type="Label" parent="."]
-margin_left = 1120.0
-margin_top = 584.0
-margin_right = 1276.0
-margin_bottom = 635.0
+margin_left = 1099.0
+margin_top = 648.0
+margin_right = 1255.0
+margin_bottom = 699.0
 custom_fonts/font = SubResource( 7 )
 text = "Made by A.Puyet
 Art from kenney.nl"

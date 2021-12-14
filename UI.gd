@@ -23,6 +23,13 @@ func _on_StartButton_pressed() -> void:
 		node.visible = false
 	for node in in_game:
 		node.visible = true
+	if paused:
+		$RestartButton/TextureRect.texture = pause_image
+		$RestartButton/TextureRect.rect_position.x = 8
+		for node in out_of_game:
+			node.visible = false
+		get_tree().paused = false
+		paused = false
 	emit_signal("start_game")
 
 
