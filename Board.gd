@@ -28,7 +28,7 @@ func generate_cards() -> void: #Create the cards
 			new_card.set_position(deck_pos.get_global_position())
 			card_deck.append(new_card)
 	randomize()
-	card_deck.shuffle()
+#	card_deck.shuffle()
 	for next_card in card_deck:
 		card_master.add_child(next_card)
 
@@ -211,19 +211,7 @@ func check_win() -> bool: #Check if the player won
 			if row.size() != 0 and !row[0].get_child(2).is_pickable():
 				won = false
 				return false
-		while won:
-			var i = 0
-			while i < rows.size(): #Move cards in order
-	# warning-ignore:return_value_discarded
-				print(i)
-				if rows[i] != []:
-					check_suits(rows[i][-1],rows[i])
-					i += 1
-					yield(get_tree().create_timer(0.1),"timeout")
-				else: 
-					i += 2
-			if rows == [[],[],[],[],[],[],[]]:
-				return true
+		return true
 	return false
 		
 

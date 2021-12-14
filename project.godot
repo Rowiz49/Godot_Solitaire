@@ -19,6 +19,7 @@ run/main_scene="res://Board.tscn"
 run/low_processor_mode=true
 boot_splash/image="res://PNG/Cards (small)/card_spades_suit.png"
 boot_splash/use_filter=false
+config/icon="res://icon.png"
 
 [autoload]
 
@@ -32,13 +33,11 @@ window/size/width=1280
 window/size/height=720
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
-<<<<<<< HEAD
+<<<<<<<HEAD[editor_plugins]enabled=PoolStringArray( "res://addons/integer_resolution_handler/plugin.cfg" )
 
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/integer_resolution_handler/plugin.cfg" )
-=======
->>>>>>> e4db5112c893f4b652e651dab39e1d73d15bf4c7
 
 [input]
 
