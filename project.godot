@@ -19,13 +19,22 @@ run/main_scene="res://Board.tscn"
 run/low_processor_mode=true
 config/icon="res://icon.png"
 
+[autoload]
+
+IntegerResolutionHandler="*res://addons/integer_resolution_handler/integer_resolution_handler.gd"
+
 [display]
 
+window/integer_resolution_handler/base_width=1280
+window/integer_resolution_handler/base_height=720
 window/size/width=1280
 window/size/height=720
-window/size/resizable=false
 window/stretch/mode="2d"
-window/stretch/aspect="expand"
+window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/integer_resolution_handler/plugin.cfg" )
 
 [input]
 
