@@ -211,7 +211,7 @@ func check_win() -> bool: #Check if the player won
 			if row.size() != 0 and !row[0].get_child(2).is_pickable():
 				won = false
 				return false
-		while won != (rows == [[],[],[],[],[],[],[]]):
+		while won:
 			var i = 0
 			while i < rows.size(): #Move cards in order
 	# warning-ignore:return_value_discarded
@@ -219,10 +219,11 @@ func check_win() -> bool: #Check if the player won
 				if rows[i] != []:
 					check_suits(rows[i][-1],rows[i])
 					i += 1
-					yield(get_tree().create_timer(0.2),"timeout")
+					yield(get_tree().create_timer(0.1),"timeout")
 				else: 
 					i += 2
-		return true
+			if rows == [[],[],[],[],[],[],[]]:
+				return true
 	return false
 		
 
