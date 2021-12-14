@@ -1,6 +1,12 @@
 # Godot Solitaire
 Klondike Solitaire card game made with Godot
 
+##Controls
+
+Left-click to drag
+
+Right-click (or alt + click) to move card automatically
+
 ## Download
 
 ### Linux
