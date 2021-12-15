@@ -1,7 +1,7 @@
 # Godot Solitaire
 Klondike Solitaire card game made with Godot
 
-##Controls
+## Controls
 
 Left-click to drag
 
