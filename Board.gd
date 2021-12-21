@@ -28,7 +28,7 @@ func generate_cards() -> void: #Create the cards
 			new_card.set_position(deck_pos.get_global_position())
 			card_deck.append(new_card)
 	randomize()
-#	card_deck.shuffle()
+	card_deck.shuffle()
 	for next_card in card_deck:
 		card_master.add_child(next_card)
 
